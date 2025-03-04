@@ -20,7 +20,7 @@
 }
 
 .projects-container {
-    max-width: 1200px; /* Limit the max width for a clean design */
+    max-width: 1400px; /* Limit the max width for a clean design */
     margin: 0 auto; /* Center the container */
     padding: 10px 20px; /* Add padding for spacing */
     text-align: center;
