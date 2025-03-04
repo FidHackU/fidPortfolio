@@ -1,0 +1,153 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Profile Section (Image Left, Description Right) */
+.about-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+  .about-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Skills Section */
+.about-skills {
+  margin-bottom: 40px;
+}
+
+.about-skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Skill Item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Skill Icons */
+.skill-icon {
+  font-size: 3rem;
+}
+
+/* Different colors for different technologies */
+.skill-icon.html {
+  color: #e34c26;
+}
+
+.skill-icon.css {
+  color: #264de4;
+}
+
+.skill-icon.php {
+  color: #777bb4;
+}
+
+.skill-icon.mysql {
+  color: #00758f;
+}
+
+.skill-icon.bootstrap {
+  color: #7952b3;
+}
+
+.skill-icon.react {
+  color: #61dafb; /* React blue */
+}
+
+/* Experience Section */
+.about-experience h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: center;
+}
+
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-item {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: #666;
+}
