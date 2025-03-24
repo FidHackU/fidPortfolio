@@ -19,7 +19,7 @@ const Contacts = () => {
   };
 
   return (
-    <div>
+    <div id="contacts" className="h-screen">
       <h1 className="contacts-title">Contact Me</h1>
       <div className="contacts-container">
         <p>Feel free to reach out for any inquiries or collaborations!</p>

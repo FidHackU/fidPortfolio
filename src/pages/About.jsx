@@ -6,12 +6,12 @@ import {
   FaBootstrap,
   FaReact,
 } from "react-icons/fa"; // Icons for skills
-import "./AboutPage.css";
+import "./About.css";
 import image from '../assets/Resume-poto.jpg';
 
-const AboutPage = () => {
+const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container h-screen" id="about">
       <h1 className="about-title">About Me</h1>
 
       {/* Profile Section (Image Left, Description Right) */}
@@ -109,4 +109,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
