@@ -13,7 +13,7 @@ import image from "../assets/Resume-poto.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center h-screen px-4 md:px-8 lg:px-16">
+    <div className="flex flex-col items-center h-screen px-6 md:px-8 lg:px-16">
       <div className="font-poppins mt-28 md:w-2/3 xl:w-1/2 w-full">
         <div className="flex justify-center">
           <div className="flex flex-col text-left">
