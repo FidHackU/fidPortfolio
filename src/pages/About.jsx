@@ -1,71 +1,37 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaPhp,
-  FaDatabase,
-  FaBootstrap,
-  FaReact,
-} from "react-icons/fa"; // Icons for skills
-import "./About.css";
-import image from '../assets/Resume-poto.jpg';
+// import "./About.css";
 
 const About = () => {
   return (
-    <div className="about-container h-screen" id="about">
-      <h1 className="about-title">About Me</h1>
-
-      {/* Profile Section (Image Left, Description Right) */}
-      <div className="about-profile">
-        <img
-          src={image}// Replace with your actual image
-          alt="Profile"
-          className="profile-image"
-        />
-        <p className="about-description">
-          Hello! I am a passionate Frontend Developer with expertise in HTML,
-          CSS, PHP, MySQL, and Bootstrap 5. I enjoy creating dynamic, scalable,
-          and user-friendly applications, ensuring both aesthetic appeal and
-          functionality.
-        </p>
-      </div>
-
-      {/* Skills Section with Icons */}
-      <div className="about-skills">
-        <h2>Skills & Technologies</h2>
-        <div className="skills-grid">
-          <div className="skill-item">
-            <FaHtml5 className="skill-icon html" />
-            <span>HTML5</span>
-          </div>
-          <div className="skill-item">
-            <FaCss3Alt className="skill-icon css" />
-            <span>CSS3</span>
-          </div>
-          <div className="skill-item">
-            <FaPhp className="skill-icon php" />
-            <span>PHP</span>
-          </div>
-          <div className="skill-item">
-            <FaDatabase className="skill-icon mysql" />
-            <span>MySQL</span>
-          </div>
-          <div className="skill-item">
-            <FaBootstrap className="skill-icon bootstrap" />
-            <span>Bootstrap 5</span>
-          </div>
-          <div className="skill-item">
-            <FaReact className="skill-icon react" />
-            <span>React.js</span>
+    <div id="about" className="h-screen font-poppins space-y-12">
+      <div className="flex justify-center">
+        {/* Profile Section (Image Left, Description Right) */}
+        <div className="flex items-center justify-center w-1/2 space-x-12">
+          <img
+            className="rounded-xl h-64 w-72 object-cover"
+            src="https://placehold.co/400"
+            alt=""
+          />
+          <div className="text-left h-64 w-72">
+            <h1 className="font-bold text-sm text-[#70a0dd]">About Me</h1>
+            <h2 className="font-bold text-lg mb-4">
+              A dedicated Web Developer based in Malaysia
+            </h2>
+            <p className="text-sm text-[#bcbabb]">
+              Hello! I am a passionate Frontend Developer with expertise in
+              HTML, CSS, PHP, MySQL, and Bootstrap 5. I enjoy creating dynamic,
+              scalable, and user-friendly applications, ensuring both aesthetic
+              appeal and functionality.
+            </p>
           </div>
         </div>
       </div>
 
       {/* Experience Section */}
-      <div className="about-experience">
-        <h2>My Journey</h2>
-        <div className="timeline">
+      <div className="flex justify-center items-center">
+        <h1 className="font-bold text-sm text-[#70a0dd]">My Journey</h1>
+        <div className="">
           {/* Internship Experience */}
-          <div className="timeline-item">
+          <div className="">
             <h3>Web Developer Intern @ Sabah Electricity Sdn Bhd</h3>
             <p>Feb 2023 - Aug 2023</p>
             <ul>
@@ -85,17 +51,17 @@ const About = () => {
           </div>
 
           {/* University Education */}
-          <div className="timeline-item">
+          <div className="">
             <h3>Bachelor of Computer Science (Hons.) - Software Engineering</h3>
             <p>2019 - 2024 | University Malaysia Sarawak (CGPA: 3.45)</p>
             <ul>
               <li>
-                Gained expertise in web development, data structures, and
-                cloud computing.
+                Gained expertise in web development, data structures, and cloud
+                computing.
               </li>
               <li>
-                Final Year Project: Car Rental Management System,
-                implementing secure booking & fleet tracking.
+                Final Year Project: Car Rental Management System, implementing
+                secure booking & fleet tracking.
               </li>
               <li>
                 Participated in hands-on projects integrating technical

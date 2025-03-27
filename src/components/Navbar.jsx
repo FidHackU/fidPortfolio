@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar flex items-center justify-between text-md font-poppins font-bold p-6 sticky top-0 bg-white">
+    <nav className="navbar flex items-center justify-between text-md font-poppins font-bold p-6 sticky top-0 bg-white z-50">
       <span>Fidel.dev</span>
       <div className="flex space-x-6">
         <a href="#home" className="hover:scale-105">Home</a>
