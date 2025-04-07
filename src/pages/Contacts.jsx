@@ -1,77 +1,35 @@
-import { useState } from "react";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"; // Importing icons
-import "./Contacts.css";
+import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa"; // Importing icons
 
 const Contacts = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message Sent!"); // Replace with actual form submission logic
-  };
-
   return (
-    <div id="contacts" className="h-screen">
-      <h1 className="contacts-title">Contact Me</h1>
-      <div className="contacts-container">
-        <p>Feel free to reach out for any inquiries or collaborations!</p>
+    <div id="contacts" className="px-4 pb-32">
+      <h1 className="font-bold text-xs text-[#70a0dd] text-left uppercase">Contact</h1>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Send Message</button>
-        </form>
+      <div className="font-bold text-left">
+        Don&apos;t be shy! Hit me up! <span className="inline-block">👇</span>
+      </div>
 
-        <div className="contact-info">
-          <h3 className="mb-5">Or Connect With Me:</h3>
-          <p>
-            <FaEnvelope className="contact-icon" />
-            Email: <a href="mailto:fidelyong22@gmail.com">fidelyong22@gmail.com</a>
-          </p>
-          <p>
-            <FaGithub className="contact-icon" />
-            GitHub: <a href="https://github.com/FidHackU" target="_blank" rel="noopener noreferrer">
-              github.com/FidHackU
-            </a>
-          </p>
-          <p>
-            <FaLinkedin className="contact-icon" />
-            LinkedIn: <a href="https://www.linkedin.com/in/fidelyong" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/fidelyong
-            </a>
-          </p>
+      <div className="grid grid-cols-1 gap-4 mt-10 text-sm text-left">
+        {/* Location */}
+        <div className="flex gap-4">
+          <FaMapMarkerAlt size={20} className="text-[#70a0dd] mt-1" />
+          <div>
+            <div className="font-bold text-left">Location</div>
+            <div className="text-gray-600 text-sm">Malaysia, Sabah</div>
+          </div>
+        </div>
+
+        {/* Mail */}
+        <div className="flex gap-4">
+          <FaEnvelope size={20} className="text-[#70a0dd] mt-1" />
+          <div>
+            <div className="font-bold">Mail</div>
+            <div className="text-gray-600">fidelyong22@gmail.com</div>
+          </div>
         </div>
       </div>
+
+
     </div>
   );
 };

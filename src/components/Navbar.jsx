@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar flex items-center justify-between text-md font-poppins font-bold p-6 sticky top-0 bg-white backdrop-blur-md z-50">
+    <nav className="navbar flex items-center justify-between text-md font-poppins font-bold p-4 sticky top-0 bg-white backdrop-blur-md z-50">
       <span>Fidel.dev</span>
 
       {/* Desktop Nav */}
@@ -14,7 +14,7 @@ const Navbar = () => {
         <a href="#home" className="hover:scale-105 transition-transform">Home</a>
         <a href="#about" className="hover:scale-105 transition-transform">About</a>
         <a href="#projects" className="hover:scale-105 transition-transform">Projects</a>
-        <a href="#contacts" className="hover:scale-105 transition-transform">Contact</a>
+        <a href="#footer" className="hover:scale-105 transition-transform">Contact</a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href="#home" className="hover:scale-105 transition-transform">Home</a>
           <a href="#about" className="hover:scale-105 transition-transform">About</a>
           <a href="#projects" className="hover:scale-105 transition-transform">Projects</a>
-          <a href="#contacts" className="hover:scale-105 transition-transform">Contact</a>
+          <a href="#footer" className="hover:scale-105 transition-transform">Contact</a>
           <div></div>
           <div></div>
           

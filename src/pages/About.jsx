@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
       <div className="text-left h-48 w-full">
-        <h1 className="font-bold text-xs text-[#70a0dd]">About Me</h1>
+        <h1 className="font-bold text-xs text-[#70a0dd] uppercase">About Me</h1>
         <h2 className="font-bold text-md mb-2">
           A dedicated Web Developer based in Malaysia
         </h2>
