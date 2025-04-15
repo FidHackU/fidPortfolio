@@ -4,7 +4,7 @@ const projectData = [
   {
     id: 1,
     title: "Car Rental System",
-    image: "https://placehold.co/500x500",
+    image: "https://placehold.co/200",
     techStack: ["Php", "MySQL", "Bootstrap"],
     description: "A short description of Project One.",
     liveLink: "https://liveprojectlink.com",
@@ -13,7 +13,7 @@ const projectData = [
   {
     id: 2,
     title: "Sesb Grid Op website functions",
-    image: "https://placehold.co/500x500",
+    image: "https://placehold.co/200",
     techStack: ["Php", "MySQL", "Bootstrap"],
     description: "A short description of Project Two.",
     liveLink: "https://liveprojectlink.com",
@@ -22,7 +22,7 @@ const projectData = [
   {
     id: 3,
     title: "AFCarWash",
-    image: "https://placehold.co/500x500",
+    image: "https://placehold.co/200",
     techStack: ["Php", "MySQL", "Bootstrap"],
     description: "A short description of Project Three.",
     liveLink: "https://liveprojectlink.com",
@@ -41,12 +41,12 @@ const Projects = () => {
       <div className="projects-container">
         <div className="">
           {projectData.map((project) => (
-            <div key={project.id} className="grid grid-cols-2 gap-4 py-2 items-center">
-              <div className="h-full w-full rounded-md">
+            <div key={project.id} className="grid grid-cols-2 gap-4 py-2 place-items-center">
+              <div className="h-full w-full rounded-md max-w-64 md:h-64 md:w-64">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-md w-full h-full object-cover"
+                  className="rounded-md w-full h-full object-cover md:h-64"
                 />
               </div>
               <div className="space-y-1">

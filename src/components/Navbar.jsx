@@ -10,7 +10,7 @@ const Navbar = () => {
       <span>Fidel.dev</span>
 
       {/* Desktop Nav */}
-      <div className="hidden sm:flex space-x-6">
+      <div className="hidden md:flex space-x-6">
         <a href="#home" className="hover:scale-105 transition-transform">Home</a>
         <a href="#about" className="hover:scale-105 transition-transform">About</a>
         <a href="#projects" className="hover:scale-105 transition-transform">Projects</a>
@@ -18,21 +18,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-      <button className="sm:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
       </button>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="grid grid-cols-1 absolute top-14 left-0 w-screen h-screen bg-white/90 sm:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <div className="grid grid-cols-1 absolute top-14 left-0 w-screen h-screen bg-white/90 md:hidden" onClick={() => setIsOpen(!isOpen)}>
           <div></div>
           <a href="#home" className="hover:scale-105 transition-transform">Home</a>
           <a href="#about" className="hover:scale-105 transition-transform">About</a>
           <a href="#projects" className="hover:scale-105 transition-transform">Projects</a>
           <a href="#footer" className="hover:scale-105 transition-transform">Contact</a>
-          <div></div>
-          <div></div>
-          
         </div>
       )}
     </nav>
